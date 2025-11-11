@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="g_css.css">
+
+<body class="game">
+    <p1>Guessing game! Input a guess from 0-100.</p1>
+    <br></br>
+    <input min='0' max='100' class='input' type="number" id="guess" oninput="validatemax()">
+    <br></br>
+    <button class="button" id="btn">
+        Guess
+    </button>
+    <div id="output_area">
+        <p id="result_message"></p>
+        <button id="play_again_btn" onclick="try_again()" style="display: none;">Play again</button>
+    </div>
+</body>
+
+<script src="g_script.js"></script>
+
+</html>
